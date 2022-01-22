@@ -1,0 +1,23 @@
+/*
+    Question:  
+    Input: 
+    Output: 
+    More:
+*/
+
+// White board part
+/*
+Sol1: 
+Space: 0
+Time: 0
+
+*/
+// Testing part
+#include <bits/stdc++.h>
+using namespace std;
+
+
+
+int main(){
+    
+}
