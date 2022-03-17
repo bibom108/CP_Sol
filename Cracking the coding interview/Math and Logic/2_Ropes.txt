@@ -1,0 +1,5 @@
+Assume that: We have 2 ropes, A and B. Each can time exactly 1 hour. Time 15 mins.
+Step 1: Light rope A at both end and light rope B at one end.
+Step 2: When rope A are burned, which mean that we have passed 30 mins and rope B have 
+left 30 mins to burned out, we light the other end of rope B. When rope B is burned
+completely, we have already time 15 mins.

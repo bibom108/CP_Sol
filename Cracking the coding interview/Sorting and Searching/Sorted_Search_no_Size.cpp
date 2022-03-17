@@ -1,7 +1,7 @@
 /*
     Question: 
-    Input: 
-    Output: 
+    Input: [-1,0,3,5,9,12], 9
+    Output: 4
     More:
 */
 
