@@ -1,4 +1,18 @@
 # Database
+## SQL Query
+1. Join
+- Left join: SELECT ... FROM table1 LEFT JOIN table2 ON table1.ID = table2.ID  
+-> Lấy toàn bộ trong table 1 và hiển thị thêm thông tin với những row có thêm thông tin trong table 2 hoặc NULL nếu không khớp.
+- Right join: SELECT ... FROM table1 RIGHT JOIN table2 ON table1.ID = table2.ID  
+-> Lấy toàn bộ trong table 2 và hiển thị thêm thông tin với những row có thêm thông tin trong table 1 hoặc NULL nếu không khớp.
+
+![](https://www.dofactory.com/img/sql/sql-joins.png)
+## Store password in database
+1. Password + random salt + Hash function -> Store this
+## Why need server between client and database
+- Bảo mật hơn, chỉ cung cấp access cho từng loại client cụ thể tùy trường hợp.
+- Có thể xử lý query từ client, giúp giảm tải cho database.
+- Đồng bộ việc sử dụng tài nguyên khi có nhiều request song song.
 ## Khái niệm chung 
 1. SQL là ngôn ngữ (command language) dùng để tương tác với db.
 1. Db là một dạng cấu trúc của dữ liệu cho phép thao tác qua máy tính bằng DB management system.

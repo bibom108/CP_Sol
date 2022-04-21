@@ -1,5 +1,11 @@
 # Networking and Web Security
 ![](https://www.dcs.bbk.ac.uk/~ptw/teaching/IWT/transport-layer/internet-protocols.png)
+## How HTTP request is made and process
+1. Client gửi request đến server khi muốn truy cập tài nguyên của website.
+2. Open TCP connection.
+3. Sau khi mở được kết nối TCP đảm bảo truyền nhận, gửi HTTP message.
+4. Server gửi lại response.
+5. Đóng kết nối hoặc giữ lại để dùng cho request khác.
 ## IP, TCP, UDP
 1. Tầng mạng: cung cấp kết nối giữa các host (end system).
 2. Tầng vận chuyển: cung cấp kết nối giữa các process chạy trong các host.
@@ -24,7 +30,13 @@
 2. HTTPS: bảo mật hơn, nếu không có https, data sẽ được truyền dạng text, có HTTPS sẽ được mã hóa thông tin trước nhờ có TLS.
 ## DNS và Enter URL
 1. DNS Dịch domain name của website sang địa chỉ IP.
-2. Step after enter URL:
+2. How DNS work:
+- User enter URL
+- Load DNS cache and check if there is IP for domain name, if yes, load the page. 
+- If no, contact ISP or DNS Server to resolve a domain name.
+- Ask DNS Server to provide an IP address.
+- Receive the IP Address
+3. Step after enter URL:
 - Browser check cache for DNS để dịch sang địa chỉ IP. Tìm trong các loại cache.
 - Nếu ko thấy trong cache, ISP's DNS server tạo query để tìm địa chỉ IP cho URL.
 - Khởi tạo kết nối TCP với server sử dụng SYN và ACK.
