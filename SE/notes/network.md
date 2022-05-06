@@ -1,5 +1,13 @@
 # Networking and Web Security
 ![](https://www.dcs.bbk.ac.uk/~ptw/teaching/IWT/transport-layer/internet-protocols.png)
+## Symmetric and Asymmetric encryption
+1. Symmetric: mã hóa bằng 1 key, giải mã bằng chính key đó. Nhanh hơn nhưng ít bảo mật hơn.
+2. Asymmetric: mã hóa và giải mã bằng 2 key khác nhau, bảo mật hơn nhưng chậm hơn.
+
+| Symmetric   | Asymmetric |
+| ----------- | ----------- |
+| Size mã hóa ra <= size cũ | Size mã hóa >= size cũ |
+| Sử dụng khi nhiều data | Sử dụng khi có ít data  |
 ## How HTTP request is made and process
 1. Client gửi request đến server khi muốn truy cập tài nguyên của website.
 2. Open TCP connection.
@@ -27,7 +35,7 @@
 ## HTTP, HTTPS
 -> Cả 2 đều là giao thức của tầng ứng dụng
 1. HTTP: không giữ lại trạng thái trước đó (stateless), chú trọng vào việc hiển thị thông tin, không quan tâm đến cách thông tin được truyền nên ít bảo mật cho thông tin và user.
-2. HTTPS: bảo mật hơn, nếu không có https, data sẽ được truyền dạng text, có HTTPS sẽ được mã hóa thông tin trước nhờ có TLS.
+2. HTTPS: bảo mật hơn, nếu không có https, data sẽ được truyền dạng text, có HTTPS sẽ được mã hóa thông tin trước nhờ có TLS (sử dụng cả mã hóa đối xứng và bất đối xứng).
 ## DNS và Enter URL
 1. DNS Dịch domain name của website sang địa chỉ IP.
 2. How DNS work:

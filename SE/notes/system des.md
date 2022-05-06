@@ -13,3 +13,5 @@ getLongURL(shortURL) return longURL
 4. Traffic and scale
 - Possible shortend url are
 - How many URL do we expect
+# API Design
+

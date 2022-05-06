@@ -24,14 +24,6 @@
 1. **Candidate key:** là super key nhưng không thể tối giản hơn được nữa.
 1. **Primary key:** là candidate key được sử dụng để hiện thực db.
 1. **Foreign key:** là col trong bảng này (con) có thể xác định được một primary key trong bảng khác (cha). Col trong bảng con được gọi là foreign key.
-
-## Các loại join:  
--> Kết hợp data giữa 1 hoặc nhiều table, dựa trên col chung giữa chúng.
-- Inner join: trả về các row cả 2 bảng cùng có.
-- Right join: ưu tiên của table bên phải.
-- Left join: ưu tiên table bên trái.
-- Full join: nằm trong table 1 hoặc table 2.
-
 ## Normalization
 - Normalization là quá trình giảm sự dư thừa và phụ thuộc bằng cách sắp xếp lại các field và bảng của db, mục tiêu chính là thêm, sửa xóa field có thể tạo thành 1 bảng.
 - Denormalization là kỹ thuật sử dụng để truy cập data từ normal form cao hơn xuống thấp hơn, tối ưu read time.
